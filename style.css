@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f7f9fc;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    width: 650px;
+    min-height: 650px;
+
+    padding: 70px 90px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 90px;
+
+    background: white;
+
+    border: 2px solid #d7e1f0;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Algorithm dropdown */
+
+#algorithm {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 25px;
+
+    border: 2px solid #cbd8eb;
+    border-radius: 15px;
+
+    background: white;
+
+    font-size: 24px;
+    color: #26354d;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* Input */
+
+#input,
+#target {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 25px;
+
+    border: 2px solid #cbd8eb;
+    border-radius: 15px;
+
+    font-size: 24px;
+
+    outline: none;
+}
+
+
+#input::placeholder,
+#target::placeholder {
+    color: #9aaac2;
+}
+
+
+#input:focus,
+#target:focus,
+#algorithm:focus {
+    border-color: #4b82f1;
+}
+
+
+/* Visualize button */
+
+#visualize {
+    width: 75%;
+    height: 70px;
+
+    align-self: center;
+
+    border: none;
+    border-radius: 15px;
+
+    background: #3478f6;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#visualize:hover {
+    background: #2467df;
+
+    transform: translateY(-2px);
+}
+
+
+#visualize:active {
+    transform: translateY(0);
+}
+
+
+#visualization {
+    height: 400px;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.bar {
+    width: 40px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background: #3478f6;
+    color: white;
+
+    border-radius: 6px 6px 0 0;
+
+    padding-bottom: 5px;
+
+    transition:
+        height 0.3s ease,
+        background 0.2s ease;
+}
+
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+#controls button {
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #3478f6;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+#controls button:hover {
+    opacity: 0.85;
+}
+
+
+#controls label {
+    margin-left: 10px;
+}
+
+
+#speed {
+    width: 120px;
+
+    cursor: pointer;
+}

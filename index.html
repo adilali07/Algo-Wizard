@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algorithm Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <select id="algorithm">
+            <option value="" disabled selected>Choose Algorithm</option>
+
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="quick">Quick Sort</option>
+            <option value="linear">Linear Search</option>
+            <option value="binary">Binary Search</option>
+            <option value="bfs">BFS</option>
+            <option value="dfs">DFS</option>
+            <option value="dijkstra">Dijkstra</option>
+        </select>
+
+
+        <input type="text" id="input" placeholder="Input">
+        <input type="text" id="target" placeholder="Enter target" style="display: none;">
+
+        <button id="visualize">
+            Visualize
+        </button>
+
+
+        <div id="visualization"></div>
+
+        <div id="controls">
+
+            <button id="prev">⏮ Prev</button>
+
+            <button id="playPause">▶ Play</button>
+
+            <button id="next">⏭ Next</button>
+
+            <label for="speed">Speed:</label>
+
+            <input
+                type="range"
+                id="speed"
+                min="1"
+                max="10"
+                value="5"
+            >
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
